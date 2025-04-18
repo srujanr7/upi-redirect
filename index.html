@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const userAgent = navigator.userAgent.toLowerCase();
+    
+    if (userAgent.includes('gpay') || userAgent.includes('phonepe') || userAgent.includes('paytm')) {
+      // Redirect to UPI payment link
+      window.location.href = "upi://pay?pa=7588357067@superyes&pn=Support&cu=INR";
+    } else {
+      // Redirect to tally form
+      window.location.href = "https://tally.so/r/wM8El8";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
